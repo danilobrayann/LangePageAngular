@@ -1,0 +1,24 @@
+@import "../../../variavel-Color/color-variables.scss";
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        background-color: $primary-text;
+        height: 5vh;
+        width: 13vw;
+        border-radius: 20px;
+        color: $secondary-text;
+        font-size: 15px;
+        font-weight: 600;
+        &:hover{
+            color: $tercidary-text;
+        }
+    }
+}
