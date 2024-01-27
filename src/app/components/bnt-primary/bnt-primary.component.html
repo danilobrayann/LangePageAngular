@@ -1,5 +1,15 @@
-<section>
-    <div class="contact">
-        <a href="http://" target="_blank" >Fale com nossos especialistas</a>
-    </div>
-    </section>
+<button 
+(click)="submit()"  
+[class]=" 'bnt' + variant" 
+[disabled]="disabled"
+>
+
+@if(!loading){
+    {{ bntText }}
+
+}@else{
+
+    carregando....
+}
+   
+</button>

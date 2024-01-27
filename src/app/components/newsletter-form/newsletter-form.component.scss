@@ -1,0 +1,36 @@
+@import "../../../variavel-Color/color-variables.scss";
+
+.form-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-text;
+    padding:40px 70px;
+    color: $secondary-text;
+    h3{
+        font-size: 36px;
+        font-weight: 600;
+        
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 1080px) {
+     .form-section{
+        flex-direction: row;
+        gap: 115px;
+        padding:40px 120px;
+     }
+
+     .text{
+        flex: 1;
+     }
+     form{
+        flex: 1;
+     }
+}
