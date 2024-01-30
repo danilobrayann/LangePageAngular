@@ -59,14 +59,29 @@ width: 30vw;
     }
 }
 
-@media (min-width: 1080px) {
-    .main-section{
-      flex-direction: row;
+
+.card-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding: 50px;
+   flex-direction: column;
+
+
+}
+.card{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0px 5%;
+    gap: 1.25rem;
+
+    h2{
+        color: $secondary-text;
     }
-    
-    .benefit-section{
-     
-        flex-direction: row;
+  
+    p{
+        width: 25vw;
     }
 }
 
@@ -76,3 +91,33 @@ width: 30vw;
     justify-content: center;
     padding: 35px 0;
 }
+.text-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.50rem;
+}
+
+
+//resposividade//
+@media (min-width: 1080px) {
+    .main-section{
+      flex-direction: row;
+    }
+    
+    .benefit-section{
+     
+        flex-direction: row;
+
+
+
+    }
+
+    .card-section{
+        flex-direction: row;
+    }
+
+    
+}
+//resposividade//
